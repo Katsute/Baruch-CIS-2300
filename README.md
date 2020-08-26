@@ -3,4 +3,4 @@
 
 ---
 
-These assignments are posted here as guides. Please read the comments to understand the code rather than just copying and pasting.
+These assignments are posted here as guides. **Do not just copy and paste**, please read the comments to understand the code.
