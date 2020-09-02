@@ -21,5 +21,5 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - classwork/09_01_2020.py
-  - assignments/09_01_2020/ICE1_FirstLastname.py
+  - /classwork/09_01_2020.py
+  - /assignments/09_01_2020/ICE1_FirstLastname.py
