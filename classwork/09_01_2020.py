@@ -34,7 +34,7 @@ print(a, b)
 
 # Functions to know:
 print(
-    # input("input: "), '\n',
+    input("input: "), '\n',
     max(1, 2), '\n',
     min(1, 2), '\n',
     int(2.5), '\n',
