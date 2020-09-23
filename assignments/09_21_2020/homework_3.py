@@ -32,16 +32,21 @@ for a total of 10*40 + 1.5*10*20 + 2*10*5 = $800.
 # add 2x wage for 20HR+ passed OT
 # calc wage
 
+
+# declare hours, wages
 regularHours = 40
 hours = float(input("Enter hours worked: "))
 hourlyWage = float(input("Enter hourly wage: "))
 
+# get overtime
 overtime = hours - regularHours
-wage = min(hours, regularHours) * hourlyWage
+wage = min(hours, regularHours) * hourlyWage  # base wage
 if overtime > 0:  # overtime hours (40+) x1.5
     wage += min(overtime, 20) * hourlyWage * 1.5
 if overtime - 20 > 0:  # excessive overtime hours (60+) x2.0
     wage += (overtime - 20) * hourlyWage * 2.0
+
+# print output
 print(f"Wages for {hours} hours at ${format(hourlyWage,'.2f')} per hour are ${format(wage,'.2f')}")
 
 
@@ -60,9 +65,10 @@ Use the Gregorian approach to determine whether a given year is a leap year. Her
 # else: not leap year
 
 
+# get year
 year = int(input("Year: "))
 
-# isLeapYear year/100 and year/400     OR    !year/100 and year/4
+# isLeapYear       year/100 and year/400       OR      !year/100 and year/4
 isLeapYear = (year%100 == 0 and year%400 == 0) or (year%100 != 0 and year%4 == 0)
 
 print(f"{str(year)} {'is' if isLeapYear else 'is not'} a leap year")  # print if is leap year
