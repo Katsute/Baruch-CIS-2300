@@ -8,6 +8,14 @@ between 40 and 50: regular pay for first 40 + 1.5*regular pay for extra hours ab
 between 50 and 60: regular pay for first 40 + 1.5*regular pay for next 10 hours + 2*regular pay for extra hours above 50
 """
 
+# TESTS:
+# hours | rate  | expected
+# ------|-------|---------
+# 0     | 15    | 0
+# 40    | 15    | 600
+# 50    | 15    | 825
+# 60    | 15    | 1125
+
 hours = None
 
 # do{
@@ -16,7 +24,7 @@ hours = None
 
 # unfortunately Python doesn't have a do while equivalent
 while True:
-    hours = int(input("Enter hours worked: "))
+    hours = float(input("Enter hours worked: "))
     if 0 <= hours <= 60:  # break from loop if hours are within range 0-60
         break
     print("Hours worked must be from 0-60")
@@ -36,7 +44,7 @@ pay += pay_rate * 1.5 * max(min(hours-40, 10), 0)
 # calculate 1.5x overtime as hours * rate (min 0 hours past 50)
 pay += pay_rate * 2.0 * max(hours-50, 0)
 
-print("Pay: ", pay)
+print("Pay: $", pay, sep='')
 
 # are the other parts also part of the HW? ↓
 
@@ -47,7 +55,7 @@ Complete the code on lines 4 and 6 so that it prints the number 6.
 x = 3
 i = 0
 while i < 3:
-    x = x + 3  # technically x = 6 would be correct because x is now 6
+    x = x + 1  # technically x = 6 would be correct because x is now 6
     i = i + 1
 print(x)  # technically you could just print 6 and it would be correct
 
@@ -60,6 +68,7 @@ first = 7
 second = 5
 third = 9
 while (first > second):
-    print ("This is an infinite loop")
-    while (first > third):
-        print ("I wonder which while loop I am in?")
+    print ("This is an infinite loop")  # indent this line and remove below to make an infinite loop
+# while (first > third):
+#     print ("I wonder which while loop I am in?")
+
