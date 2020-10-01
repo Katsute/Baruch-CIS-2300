@@ -41,7 +41,7 @@ while True:
 pay = pay_rate * min(hours, 40)
 # calculate 1.5x overtime as hours * rate (min 0 hours max 10 hours past 40)
 pay += pay_rate * 1.5 * max(min(hours-40, 10), 0)
-# calculate 1.5x overtime as hours * rate (min 0 hours past 50)
+# calculate 2x overtime as hours * rate (min 0 hours past 50)
 pay += pay_rate * 2.0 * max(hours-50, 0)
 
 print("Pay: $", pay, sep='')
