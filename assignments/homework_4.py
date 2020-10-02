@@ -47,7 +47,7 @@ pay += pay_rate * 2.0 * max(hours-50, 0)
 print("Pay: $", pay, sep='')
 
 # are the other parts also part of the HW? ↓
-
+'''
 """
 Complete the code on lines 4 and 6 so that it prints the number 6.
 """
@@ -71,4 +71,4 @@ while (first > second):
     print ("This is an infinite loop")  # indent this line and remove below to make an infinite loop
 # while (first > third):
 #     print ("I wonder which while loop I am in?")
-
+'''
