@@ -33,8 +33,6 @@ for num in range(1, 10, 2):  # (start, end, step)
     print(num)
 
 
-print("------------------------")
-
 # for(int i = 10; i > 0; i--)
 for num in range(10, 0, -1):
     print(num)
