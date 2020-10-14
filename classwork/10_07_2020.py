@@ -25,7 +25,11 @@ while score < 0:
 print(score)
 
 # practice
-nums = ''
-for num in range(99, 89, -1):  # 99-90 (inclusive) decrement by 1
-    nums += str(num) + ", "  # append comma to string
-print(nums[:-2])  # remove last comma and space from string
+
+# nums = ''
+# for num in range(99, 89, -1):  # 99-90 (inclusive) decrement by 1
+#    nums += str(num) + ", "  # append comma to string
+# print(nums[:-2])  # remove last comma and space from string
+
+for num in range(99, 89, -1):
+    print(num, end=", ")  # by default end is newline
