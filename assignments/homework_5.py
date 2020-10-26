@@ -8,7 +8,7 @@ Use no other variables other than n, k, and total.
 
 n = int(input("Positive Integer: "))
 total = 0
-for k in range(1, n+1):
+for k in range(1, n+1):  # 1-n
     total += k*k*k
 print(total)
 
@@ -20,7 +20,7 @@ and assign it to the variable avg.
 
 n = int(input("Positive Integer: "))
 total = 0
-for k in range(1, n+1):
+for k in range(1, n+1):  # 1-n
     total += k
 avg = total / n
 print(avg)
@@ -30,7 +30,7 @@ print(avg)
 Write a for loop that prints the integers 0 through 39, each value on a separate line.
 """
 
-for n in range(0, 40):
+for n in range(0, 40):  # 0-39
     print(n)
 
 # 51931 ################################################################################################
@@ -43,7 +43,7 @@ Regarding your code's standard output, CodeLab will check for case errors and wi
 (tabs, spaces, newlines) exactly.
 """
 
-for n in range(5, 175, 5):
+for n in range(5, 175, 5):  # 5-170, +5
     print(n)
 
 # 51180 ################################################################################################
@@ -54,8 +54,8 @@ Use the variables k and total to write a white loop that computes the sum of the
 """
 
 total = 0
-k = 0
-while k <= 50:
+k = 1
+while k <= 50:  # 1-50
     total += k*k
     k += 1
 
