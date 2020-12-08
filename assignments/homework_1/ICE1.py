@@ -13,7 +13,7 @@
 # In[1]:
 
 
-print("Keith Chiu", "1 Bernard Baruch Way", "New York, NY 10010", sep='\n')
+print("K C", "1 Bernard Baruch Way", "New York, NY 10010", sep='\n')
 
 
 # 2. Write a program to output following wages of employees (some are bi-weekly, monthly, and yearly). Be sure to properly format their wages such that they are aligned, with proper formatting: 

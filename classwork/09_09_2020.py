@@ -4,7 +4,7 @@
 # print(x, y)
 
 # noinspection SpellCheckingInspection
-print("Chiu", "Keith", sep='\\')  # '\' escape character
+print("C", "K", sep='\\')  # '\' escape character
 
 # Formatting with F-Strings (string format)
 print(f'{10:.4f}')          # '.4f' four decimal float
