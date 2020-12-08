@@ -35,7 +35,7 @@ a, b = 1, 's'
 
 Returns the type of the object.
 
-`type(`*`Object`*`)`
+`type(Object)`
 ```python
 type('string')  # string
 type(1)  # int
@@ -46,7 +46,7 @@ type(1.0)  # float
 
 Casts the object to a datatype.
 
-`str(`*`Object`*`)`
+`str(Object)`
 ```python
 str(1)  # "1"
 str(1.0)  # "1.0"
@@ -56,7 +56,7 @@ str(False)  # "False"
 # String
 
 Things to note:
-  - String concatentation only works with string types. You must cast objects using [`str(`*`Object`*`)`](#Casting) to concatenate them.
+  - String concatentation only works with string types. You must cast objects using [`str(Object)`](#Casting) to concatenate them.
   - Escape special characters like `\n` or `\t` using an additional back slash `\`.
     ```python
     "\\n"  # "\n"
@@ -70,7 +70,7 @@ Things to note:
 
 Ask for user input. This value will always be a string.
 
-`input(`*`string`*`)`
+`input(string)`
 
 ```python
 value = input("Please enter value: ")
@@ -80,13 +80,13 @@ value = input("Please enter value: ")
 
 Print a text.
 
-`print(`*`string...`*`)`
+`print(string...)`
 
 ```python
 print("first", "next")  # first next
 ```
 
-`print(`*`string..., sep=string`*`)`
+`print(string..., sep=string)`
 
 ```python
 print("first", "next", sep='+')  # first+next
@@ -302,9 +302,9 @@ Works for both `float` and `int`.
 
 |method|description|
 |-|-|
-|`max(`*`float, float`*`)`|returns the maximum value|
-|`min(`*`float, float`*`)`|returns the minimum value|
-|`abs(`*`float`*`)`|returns the absolute value|
+|`max(float, float)`|returns the maximum value|
+|`min(float, float)`|returns the minimum value|
+|`abs(float)`|returns the absolute value|
 
 
 # Boolean
@@ -347,7 +347,7 @@ Generate an array to be used in a for-index loop.
   - The second parameter is the ending index (not included).
   - The third optional parameter is the step value (default is 1).  
 
-`range(`*`int, int, int`*`)`
+`range(int, int, int)`
 
 ```python
 for i in range(0, 10, 2):
@@ -599,7 +599,7 @@ Things to note:
 
 Function names are defined as:
 
-`def function_name(`*`parameters`*`)`
+`def function_name(parameters)`
 
 ```python
 def function_name(parameters):
@@ -609,7 +609,7 @@ def function_name(parameters):
 
 Functions are called using:
 
-`function_name(`*`parameters`*`)`
+`function_name(parameters)`
 
 ```python
 function_name("Hello")
@@ -622,7 +622,7 @@ Things to note:
   - Keyword arguments can be set in any order.
   - Positional arguments may not come after keyword arguments.
 
-```
+```python
 def function_name(required_arg, keyword_arg=1):
 
     return
@@ -665,8 +665,9 @@ Things to know:
 ```python
 import random
 random.randint()  # random float between 0 and 1 (including 0 but not 1)
+```
 
-`random.randint(`*`start, end`*`)`
+`random.randint(start, end)`
 
 ```python
 import random
