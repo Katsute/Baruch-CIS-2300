@@ -664,7 +664,7 @@ Things to know:
 
 ```python
 import random
-random.randint()  # random float between 0 and 1 (including 0 but not 1)
+random.random()  # random float between 0 and 1 (including 0 but not 1)
 ```
 
 `random.randint(start, end)`
