@@ -38,7 +38,7 @@ def ice5_2():
         'Phelps':23
     }
     
-    swimmers['Phelps'] = 28
+    swimmers['Phelps'] += 5
     print(swimmers)
     
     assert(swimmers['Phelps'] == 28)  # check result
