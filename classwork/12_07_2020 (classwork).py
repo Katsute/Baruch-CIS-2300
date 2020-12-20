@@ -1,7 +1,7 @@
 '''
-1. Create a dictionary that keeps track of the USA’s Olympic medal count. 
+1. Create a dictionary that keeps track of the USA's Olympic medal count. 
 Each key of the dictionary should be the type of medal (gold, silver, or 
-bronze) and each key’s value should be the number of that type of medal 
+bronze) and each key's value should be the number of that type of medal 
 the USA's won. Say, the USA has 33 gold medals, 17 silver, and 12 bronze. 
 Create a dictionary saved in the variable medals that reflects this 
 information.
